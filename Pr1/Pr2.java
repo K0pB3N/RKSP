@@ -25,7 +25,7 @@ public class Pr2 {
             int num = sc.nextInt();
             Future<Integer> future = calculator.calculate(num);
             while (!future.isDone()) {
-                Thread.sleep(100);
+                Thread.sleep(1000);
             }
             Integer result = future.get();
             System.out.println(result);

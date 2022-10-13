@@ -4,7 +4,7 @@ import java.io.*;
 public class FileINOUT {
     public static void copyFile(File src, File dest) throws IOException {
         try (InputStream is = new FileInputStream(src);
-                OutputStream os = new FileOutputStream(dest)) {
+        OutputStream os = new FileOutputStream(dest)) {
             byte[] buffer = new byte[1024];
             int len;
             while ((len = is.read(buffer)) != -1) {

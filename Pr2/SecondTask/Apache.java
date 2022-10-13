@@ -1,5 +1,6 @@
 package Pr2.SecondTask;
 
+
 import org.apache.commons.io.FileUtils;
 
 import java.io.File;
@@ -11,8 +12,8 @@ public class Apache {
     }
 
     public static void main(String[] args) {
-        File from = new File("Pr2\\secTaskOrig.txt");
-        File to = new File("Pr2\\secTaskOrigCOPY3.txt");
+        File from = new File("Pr2\\SecondTask\\secTaskOrig.txt");
+        File to = new File("Pr2\\SecondTask\\secTaskOrigCOPY3.txt");
 
         try {
             long startTime = System.nanoTime();
