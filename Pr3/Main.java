@@ -9,13 +9,15 @@ import io.reactivex.rxjava3.core.Observer;
 import io.reactivex.rxjava3.disposables.Disposable;
 import io.reactivex.rxjava3.internal.schedulers.NewThreadScheduler;
 
+
+
 public class Main {
 
     public static void main(String[] args) {
         // Program1();
-        // Program2();
+        Program2();
         // Program3();
-        Program4();
+        // Program4();
     }
 
     public static void Program1() {
@@ -123,27 +125,27 @@ public class Main {
 
     public static void Program2() {
         Random rnd = new Random();
-        // 2.1.3
+
         System.out.println("2.1.3");
         var sourceStream = java.util.stream.IntStream.range(0, rnd.nextInt(1000))
                 .map(x -> rnd.nextInt());
         var finalStream = sourceStream.limit(10);
-        finalStream.forEach(s -> System.out.println(s));
-        // 2.2.3
-        System.out.println("2.2.3");
-        sourceStream = java.util.stream.IntStream.range(0, 1000)
-                .map(x -> rnd.nextInt());
-        var sourceStream2 = java.util.stream.IntStream.range(0, 1000)
-                .map(x -> rnd.nextInt());
-        var sourceArray2 = sourceStream2.toArray();
-        AtomicInteger i = new AtomicInteger();
-        finalStream = sourceStream.flatMap(x -> java.util.stream.IntStream.of(x, sourceArray2[i.getAndIncrement()]));
-        finalStream.forEach(s -> System.out.println(s));
-        // 2.3.3
-        System.out.println("2.3.3");
-        sourceStream = java.util.stream.IntStream.range(0, rnd.nextInt(1000))
-                .map(x -> rnd.nextInt());
-        System.out.println(sourceStream.reduce((x, y) -> y).getAsInt());
+        finalStream.forEach(s -> System.out.println("2.1.3: " + s));
+   
+        // System.out.println("2.2.3");
+        // var sourceStream = java.util.stream.IntStream.range(0, 1000)
+        //         .map(x -> rnd.nextInt());
+        // var sourceStream2 = java.util.stream.IntStream.range(0, 1000)
+        //         .map(x -> rnd.nextInt());
+        // var sourceArray2 = sourceStream2.toArray();
+        // AtomicInteger i = new AtomicInteger();
+        // var finalStream = sourceStream.flatMap(x -> java.util.stream.IntStream.of(x, sourceArray2[i.getAndIncrement()]));
+        // finalStream.forEach(s -> System.out.println("2.2.3: " + s));
+       
+        // System.out.println("2.3.3");
+        // var sourceStream = java.util.stream.IntStream.range(0, rnd.nextInt(1000))
+        //         .map(x -> rnd.nextInt());
+        // System.out.println("2.3.3: " + sourceStream.reduce((x, y) -> y).getAsInt());
     }
 
     public static void Program3() {
@@ -152,7 +154,7 @@ public class Main {
             Program3.userFriends[i] = new Program3.UserFriend(rnd.nextInt(), rnd.nextInt());
         }
         // int !?
-        Integer[] userIds = new Integer[10];
+        Integer[] userIds = new Integer[10]; 
         for (int i = 0; i < userIds.length; i++) {
             userIds[i] = Program3.userFriends[rnd.nextInt(Program3.userFriends.length)].userId;
         }
@@ -284,6 +286,5 @@ public class Main {
                 });
             }
         }
-
     }
 }
