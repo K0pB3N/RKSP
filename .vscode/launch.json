@@ -1,0 +1,21 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "org.example.Main",
+            "projectName": "rsockets"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-RsocketStarterApplication<Pr4>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "io.vividcode.rsocketstarter.spring.RsocketStarterApplication",
+            "projectName": "Pr4",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

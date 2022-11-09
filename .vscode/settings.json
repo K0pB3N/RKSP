@@ -4,7 +4,14 @@
         "Pr2/SecondTask/commons-io-2.11.0.jar",
         "rxjava-3.1.5.jar",
         "Pr3/reactive-streams-1.0.4.jar",
-        "Pr3/rxjava-3.1.5.jar"
+        "Pr3/rxjava-3.1.5.jar",
+        "Pr4/aopalliance-1.0.jar",
+        "Pr4/commons-logging-1.1.jar",
+        "Pr4/spring-beans-2.5.jar",
+        "Pr4/spring-context-2.5.jar",
+        "Pr4/spring-core-2.5.jar",
+        "Pr4/springframework-5.1.7.jar"
     ],
-    "maven.view": "flat"
+    "maven.view": "flat",
+    "java.configuration.updateBuildConfiguration": "automatic"
 }
