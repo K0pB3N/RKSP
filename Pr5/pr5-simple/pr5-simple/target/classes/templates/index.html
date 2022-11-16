@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="POST" th:action="@{upload}" enctype="multipart/form-data">
+    <label>
+        Выберете файл для загрузки:
+        <input type="file" name="files" multiple />
+    </label><br>
+    <input type="submit" value="Загрузить" />
+</form>
+
+<div th:if="${files.isEmpty()}">Пусто</div>
+
+<table th:if="${files.size() > 0}">
+    <tbody>
+    <tr>
+        <th>Название</th>
+        <th>Дата загрузки</th>
+    </tr>
+    <tr th:each="file: ${files}">
+        <td>
+            <a
+                    download
+                    th:text="${file.getName()}"
+                    th:href="@{{url} (url = ${file.getUrl()})}">
+            </a>
+        </td>
+        <td th:text="${file.getDate()}"></td>
+    </tr>
+    </tbody>
+</table>
+
+<div style="display: none;" th:text="${appName}"></div>
+
+</body>
+</html>

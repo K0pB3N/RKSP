@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Pr5SimpleApplication",
+            "request": "launch",
+            "mainClass": "com.example.pr5simple.Pr5SimpleApplication",
+            "projectName": "pr5-simple"
+        },
+        {
+            "type": "java",
             "name": "Launch Main",
             "request": "launch",
             "mainClass": "org.example.Main",
