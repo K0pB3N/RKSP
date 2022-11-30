@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch ReactiveSpringBootApplication",
+            "request": "launch",
+            "mainClass": "com.reactive.examples.ReactiveSpringBootApplication",
+            "projectName": "practical-reactor"
+        },
+        {
+            "type": "java",
             "name": "Launch Pr5SimpleApplication",
             "request": "launch",
             "mainClass": "com.example.pr5simple.Pr5SimpleApplication",
