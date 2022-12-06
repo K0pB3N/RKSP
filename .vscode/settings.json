@@ -13,5 +13,6 @@
         "Pr4/springframework-5.1.7.jar"
     ],
     "maven.view": "hierarchical",
-    "java.configuration.updateBuildConfiguration": "automatic"
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "java.compile.nullAnalysis.mode": "automatic"
 }
