@@ -2,6 +2,48 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Pr2",
+            "request": "launch",
+            "mainClass": "Pr2",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "Launch Pr1",
+            "request": "launch",
+            "mainClass": "Pr1",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "Launch Pr1_1$FindMin",
+            "request": "launch",
+            "mainClass": "Pr1_1$FindMin",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "Launch Pr1_2",
+            "request": "launch",
+            "mainClass": "Pr1_2",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "Launch Pr2_3",
+            "request": "launch",
+            "mainClass": "Pr2.Pr2_3",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "Pr3.Main",
+            "projectName": ""
+        },
+        {
+            "type": "java",
             "name": "Launch ReactiveSpringBootApplication",
             "request": "launch",
             "mainClass": "com.reactive.examples.ReactiveSpringBootApplication",
